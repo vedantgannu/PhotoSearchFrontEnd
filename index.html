@@ -46,9 +46,9 @@
 <div class="uploadOuter">
   <h2>Upload photos here!</h2>
   <form action="">
-    <input type="text" id="fname" name="firstname" placeholder="my custom labels..">
-    <input type="file" accept="image/*" onchange="upload(event)">
-    <button>Upload</button>
+    <input type="text" id="myLabels" name="firstname" placeholder="my custom labels..">
+    <input type="file" id="file-selector" accept=".jpg, .jpeg, .png" onchange="upload()">
+    <button onclick="upload()">Upload</button>
     <img id="output"/>
   </form>
   

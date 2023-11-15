@@ -1,12 +1,12 @@
 .searchOuter {
-    background-color: orange;
-    color: white;
-    border: 2px solid black;
-    margin: 20px;
-    padding: 20px;
-    height: 400px;
-    width: 400px;
-  }
+  background-color: orange;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  height: 600px;
+  width: 400px;
+}
 
 .uploadOuter {
 background-color: violet;
@@ -14,34 +14,34 @@ color: white;
 border: 2px solid black;
 margin: 20px;
 padding: 20px;
-height: 400px;
+height: 600px;
 width: 400px;
 }
 
 .searchresult{
-    color: white;
-    border: 2px solid black;
-    margin: 20px;
-    padding: 20px;
-    height: 50px;
-    width: 50px;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  height: 50px;
+  width: 50px;
 }
 
 #result {
-  margin-top: 2em;
-  background: #EF476F;
-  border-radius: 5px;
-  padding: 2rem;
-  height: 5px;
-  color: #fff;
+margin-top: 2em;
+background: #EF476F;
+border-radius: 5px;
+padding: 2rem;
+height: 5px;
+color: #fff;
 }
 button {
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border-radius: 10px;
-  background: #06D6A0;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  outline: inherit;
+padding: 0.75rem;
+margin-bottom: 1rem;
+border-radius: 10px;
+background: #06D6A0;
+color: #fff;
+border: none;
+cursor: pointer;
+outline: inherit;
 }
