@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<head>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- api gateway generated sdk -->
+  <script type="text/javascript" src="apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
+  <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+  <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+  <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+  <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+  <script type="text/javascript" src="apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+  <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+  <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+  <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+  <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+  <script type="text/javascript" src="apiGateway-js-sdk/apigClient.js"></script>
+
+
+</head>
+<body>
+
+<script>
+    
+    var sdk = apigClientFactory.newClient({});
+
+</script>
+
+<div class="searchOuter">
+  <h2>Search for photos here!</h2>
+  <input type="text" id="fname" name="firstname">
+  <button onclick="search()">text search</button>  
+  <div id="demo"></div>
+  <h4 id="status">Press the button below, and start speaking</h4>
+  <button onclick="startRecognition()">Speech to text</button>
+  <p id="result" class="hide"></p>
+  <button onclick="voiceSearch()">voice search</button>  
+	
+	
+</div>
+
+
+<div class="uploadOuter">
+  <h2>Upload photos here!</h2>
+  <form action="">
+    <input type="text" id="fname" name="firstname" placeholder="my custom labels..">
+    <input type="file" accept="image/*" onchange="upload(event)">
+    <button>Upload</button>
+    <img id="output"/>
+  </form>
+  
+  
+</div>
+<script type = "text/javascript" src="voiceSearch.js"></script>
+<script type = "text/javascript" src="startRecognition.js"></script>
+<script type = "text/javascript" src="search.js"></script>
+<script type = "text/javascript" src="upload.js"></script>
+</body>
